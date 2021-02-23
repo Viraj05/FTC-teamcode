@@ -12,9 +12,9 @@ import org.firstinspires.ftc.robotcore.external.navigation.AxesOrder;
 import org.firstinspires.ftc.robotcore.external.navigation.AxesReference;
 import org.firstinspires.ftc.robotcore.external.navigation.Orientation;
 import org.firstinspires.ftc.robotcore.external.ClassFactory;
-import org.firstinspires.ftc.robotcore.external.navigation.VuforiaLocalizer;
+/*import org.firstinspires.ftc.robotcore.external.navigation.VuforiaLocalizer;
 import org.firstinspires.ftc.robotcore.external.tfod.Recognition;
-import org.firstinspires.ftc.robotcore.external.tfod.TFObjectDetector;
+import org.firstinspires.ftc.robotcore.external.tfod.TFObjectDetector;*/
 
 import java.util.List;
 
@@ -396,7 +396,7 @@ public class Auto_Code extends LinearOpMode {
     }
 
 
-    private static final String TFOD_MODEL_ASSET = "UltimateGoal.tflite";
+    /*private static final String TFOD_MODEL_ASSET = "UltimateGoal.tflite";
     private static final String LABEL_FIRST_ELEMENT = "Quad";
     private static final String LABEL_SECOND_ELEMENT = "Single";
     private static final String VUFORIA_KEY = "AZL+ESX/////AAAAmSIWp50Ri0AenYSCRXT9VwQ+S1Pw1+TKNGgPV5KpleBAz4bkXUMZ46PGPcpNGX/RT1bhl8AbtbltsRTQejJSl0K5JurINnhGk9kW9ezGsHWmHI9NU8Nqd/JP2RRJWRtD6x++T83w6fMvl5acLbseV3PulaaWAzQQ7Xvnnqm4ovoKAbWLojVH485fjkijXUgVXLCaszwdrNEZFrEmdoiwdMnPiEYNSyNrlkO/ZZ2m0wLrevDQP9beFWsZ8Aqw5tfFDEJ1OYmUEqijUcsqPDsA0v0yXMuKRQGs8SLIQG0pD3F09qzwuWOsowf+JP6DGTo9RdOlwsESw/QFZA7g47mCHAoTuB7KlXqJuMH4gRye8gqT";
@@ -416,7 +416,7 @@ public class Auto_Code extends LinearOpMode {
         TFObjectDetector.Parameters tfodParameters = new TFObjectDetector.Parameters(tfodMonitorViewId);
         tfodParameters.minResultConfidence = 0.8f;
         tfod = ClassFactory.getInstance().createTFObjectDetector(tfodParameters, vuforia);
-        tfod.loadModelFromAsset(TFOD_MODEL_ASSET, LABEL_FIRST_ELEMENT, LABEL_SECOND_ELEMENT);
+        tfod.loadModelFromAsset(TFOD_MODEL_ASSET, LABEL_FIRST_ELEMENT, LABEL_SECOND_ELEMENT);*/
     }
 
 
@@ -454,12 +454,12 @@ public class Auto_Code extends LinearOpMode {
 
         // Put initialization blocks here.
 
-        if (tfod != null) {
+        /*if (tfod != null) {
             tfod.activate();
         }
         telemetry.addData(">", "Starting camera of Robot Controller. Please wait.");
         telemetry.update();
-        sleep(2000);
+        sleep(2000);*/
         telemetry.addData(">", "Click on Play to start op mode");
         telemetry.update();
         sleep(2000);
